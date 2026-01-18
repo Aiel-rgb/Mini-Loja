@@ -1,18 +1,21 @@
-module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  variants: {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
     extend: {
-      color:{
+      colors: {
         primary: '#0a1128',
         secondary: '#001f54',
         tertiary: '#fefcfb',
         quaternary: '#1282a2',
       },
-      
     },
   },
   plugins: [],
